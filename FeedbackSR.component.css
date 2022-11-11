@@ -1,64 +1,147 @@
 .bgi-size-cover {
     border: 2px solid red;
-    /* height: 100vh !important; */
+    height: 100vh !important;
     min-height: 59em;
-    background: url("images/bg02.jpg") no-repeat center center fixed;
+    background: url("images/bgEmoji.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
 }
-.max-h-70px{
+
+.max-h-70px {
     width: 70%;
 }
+
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: calc(2%);
-    position: relative;
+    /* top: calc(2%); */
+    /* position: relative; */
     /* border: 2px solid red; */
     height: 47em;
     width: 1000px;
-    background:linear-gradient(90deg, #ffffffe1 55%, #ffffff00);
-}
-
-.container {
-    overflow: hidden;
+    background: linear-gradient(90deg, #ffffffe1 55%, #ffffff00);
 }
 
 hr {
-
-    width: calc(92%);
-    height: 3px;
+    width:calc(90%);
+    height: 5px;
     /* border: 1px solid black; */
     background-color: rgba(136, 130, 130, 0.781);
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 420px) {
     .bgi-size-cover {
         border: 2px solid red;
         height: 100vh !important;
         min-height: 59em;
-        background: url("images/bg02.jpg") no-repeat center center fixed;
+        background: url("images/bgEmojimob.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+        background-size: cover;
         width: calc(100%);
     }
 
-    .card{
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 1%;
+        position: relative;
+        /* border: 2px solid red; */
+        height: calc(60em);
+        width: calc(100%);
+        background: #ffffffe1;
+        border-radius: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 760px) {
+    .bgi-size-cover {
+        border: 2px solid red;
+        height: 100vh !important;
+        min-height: 59em;
+        background: url("images/bgEmoji.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: calc(100%);
+    }
+
+    .card {
         display: flex;
         justify-content: center;
         align-items: center;
         top: 10%;
         /* position: relative; */
         /* border: 2px solid red; */
-        height: calc(50em);
-        width: calc(80%);
+        height: calc(60em);
+        width: calc(100% - 10px);
         background: #ffffffe1;
+        border-radius: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+    .bgi-size-cover {
+        border: 2px solid red;
+        height: 100vh !important;
+        min-height: 59em;
+        background: url("images/bgEmoji.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: calc(100%);
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        /* position: relative; */
+        /* border: 2px solid red; */
+        height: calc(60em);
+        width: calc(100% - 100px);
+        background: linear-gradient(90deg, #ffffffe1 70%, #ffffff00);
+        border-radius: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1920px) {
+    .bgi-size-cover {
+        border: 2px solid red;
+        height: 100vh;
+        min-height: 59em;
+        background: url("images/bgEmoji.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: calc(100%);
+    }
+    .row{
+        position: relative;
+        left: -200px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        /* position: relative; */
+        /* border: 2px solid red; */
+        height: calc(53em);
+        width: 1200px;
+        background: linear-gradient(90deg, #ffffffe1 70%, #ffffff00);
         border-radius: 0.7rem;
     }
 }
