@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FeedbackSR.component.css">
+    <link rel="stylesheet" href="css/style.bundle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+</head>
+<body>
+    <div novalidate [formGroup]="screenFormGroup" class="bgi-size-cover">
+        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap"
+            [magic]="mgc.FeedbackSR" style="background-color: white">
+            <div class="d-flex align-items-center mr-3">
+                <img class="img-fluid max-h-70px" src="images/flipkart.jpg" alt="Flipkart">
+    
+            </div>
+            <div class="d-flex align-items-center ml-3">
+    
+                <img class="img-fluid max-h-70px" src="images/profectus.jpg" alt="Profectus Capital">
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-root">
+            <div class="d-flex flex-row-fluid">
+                <div class="d-flex flex-column-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 mt-25 mb-9">
+                                <div class="card">
+                                    <div></div>
+                                    <hr>
+                                    <div class="card-body">
+                                        <div style="display: flex; flex-direction: row">
+                                            <label [magic]="mgc.Label2" class="lable_overflow mgFont1">
+                                                SRNo
+                                            </label>
+                                            <div>
+                                                <input [formControlName]="mgc.SRNO" [magic]="mgc.SRNO" mgFormat />
+                                                <mgError [magic]=mgc.SRNO> </mgError>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: row">
+                                            <label [magic]="mgc.Label4" class="lable_overflow mgFont1">
+                                                CS_RequestID
+                                            </label>
+                                            <div>
+                                                <input [formControlName]="mgc.CS_RequestHdr_CS_RequestID"
+                                                    [magic]="mgc.CS_RequestHdr_CS_RequestID" mgFormat />
+                                                <mgError [magic]=mgc.CS_RequestHdr_CS_RequestID> </mgError>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: row">
+                                            <label [magic]="mgc.Label6" class="lable_overflow mgFont1">
+                                                CS_ServiceType
+                                            </label>
+                                            <div>
+                                                <input [formControlName]="mgc.CS_RequestHdr_CS_ServiceType" type='number'
+                                                    [magic]="mgc.CS_RequestHdr_CS_ServiceType" mgFormat rangevalidator />
+                                                <mgError [magic]=mgc.CS_RequestHdr_CS_ServiceType> </mgError>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
+
+<!-- running  -->
+
+<!-- <div novalidate [formGroup]="screenFormGroup" class="bgi-size-cover bgi-position-center"
+    style="background-image: url(assets/images/bg01.jpg);height: 100vh;">
+    <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap"
+        [magic]="mgc.FeedbackSR" style="background-color: white">
+        <div class="d-flex align-items-center mr-3">
+            <img class="img-fluid max-h-70px" src="assets/images/flipkart.jpg" alt="Flipkart">
+
+        </div>
+        <div class="d-flex align-items-center ml-3">
+
+            <img class="img-fluid max-h-70px" src="assets/images/profectus.jpg" alt="Profectus Capital">
+        </div>
+    </div>
+    <div class="d-flex flex-column flex-root">
+        <div class="d-flex flex-row-fluid">
+
+            <div class="d-flex flex-column-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 mt-25 mb-9">
+                            <div class="card card-custom">
+                                <div class="card-body">
+
+                                    <div style="display: flex; flex-direction: row">
+                                        <label [magic]="mgc.Label2" class="lable_overflow mgFont1">
+                                            SRNo
+                                        </label>
+                                        <div>
+                                            <input [formControlName]="mgc.SRNO" [magic]="mgc.SRNO" mgFormat />
+                                            <mgError [magic]=mgc.SRNO> </mgError>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: row">
+                                        <label [magic]="mgc.Label4" class="lable_overflow mgFont1">
+                                            CS_RequestID
+                                        </label>
+                                        <div>
+                                            <input [formControlName]="mgc.CS_RequestHdr_CS_RequestID"
+                                                [magic]="mgc.CS_RequestHdr_CS_RequestID" mgFormat />
+                                            <mgError [magic]=mgc.CS_RequestHdr_CS_RequestID> </mgError>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: row">
+                                        <label [magic]="mgc.Label6" class="lable_overflow mgFont1">
+                                            CS_ServiceType
+                                        </label>
+                                        <div>
+                                            <input [formControlName]="mgc.CS_RequestHdr_CS_ServiceType" type='number'
+                                                [magic]="mgc.CS_RequestHdr_CS_ServiceType" mgFormat rangevalidator />
+                                            <mgError [magic]=mgc.CS_RequestHdr_CS_ServiceType> </mgError>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->
